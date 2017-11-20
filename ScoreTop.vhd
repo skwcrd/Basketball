@@ -141,7 +141,7 @@ Begin
 	Port Map(
 		CLK	=> CLK,
 		Rstb	=> Rstb,
-		i1s	=> w1s,
+		i1s	=> w0_5s,
 		I		=> wChange,
 		iCOM	=> wCOM,
 		com	=> com
