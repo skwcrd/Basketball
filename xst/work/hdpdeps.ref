@@ -1,0 +1,125 @@
+V3 83
+FL /root/VHDL/Sport/Basketball/BCD.vhd 2017/11/01.23:01:08 P.20131013
+EN work/BCD 1511350920 FL /root/VHDL/Sport/Basketball/BCD.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/BCD/Behavioral 1511350921 \
+      FL /root/VHDL/Sport/Basketball/BCD.vhd EN work/BCD 1511350920
+FL /root/VHDL/Sport/Basketball/Buzzer.vhd 2017/11/19.09:05:32 P.20131013
+EN work/Buzzer 1511350908 FL /root/VHDL/Sport/Basketball/Buzzer.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Buzzer/Behavioral 1511350909 \
+      FL /root/VHDL/Sport/Basketball/Buzzer.vhd EN work/Buzzer 1511350908
+FL /root/VHDL/Sport/Basketball/CD10min.vhd 2017/11/20.07:59:38 P.20131013
+EN work/CD10min 1511350900 FL /root/VHDL/Sport/Basketball/CD10min.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CD10min/Behavioral 1511350901 \
+      FL /root/VHDL/Sport/Basketball/CD10min.vhd EN work/CD10min 1511350900
+FL /root/VHDL/Sport/Basketball/CD15min.vhd 2017/11/16.10:24:12 P.20131013
+EN work/CD15min 1511350902 FL /root/VHDL/Sport/Basketball/CD15min.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CD15min/Behavioral 1511350903 \
+      FL /root/VHDL/Sport/Basketball/CD15min.vhd EN work/CD15min 1511350902
+FL /root/VHDL/Sport/Basketball/CD2min.vhd 2017/11/16.10:24:16 P.20131013
+EN work/CD2min 1511350904 FL /root/VHDL/Sport/Basketball/CD2min.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CD2min/Behavioral 1511350905 \
+      FL /root/VHDL/Sport/Basketball/CD2min.vhd EN work/CD2min 1511350904
+FL /root/VHDL/Sport/Basketball/CLK1ms.vhd 2017/11/12.02:06:50 P.20131013
+EN work/CLK1ms 1511350882 FL /root/VHDL/Sport/Basketball/CLK1ms.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CLK1ms/Behavioral 1511350883 \
+      FL /root/VHDL/Sport/Basketball/CLK1ms.vhd EN work/CLK1ms 1511350882
+FL /root/VHDL/Sport/Basketball/CLK1s.vhd 2017/11/01.23:22:32 P.20131013
+EN work/CLK1s 1511350894 FL /root/VHDL/Sport/Basketball/CLK1s.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CLK1s/Behavioral 1511350895 \
+      FL /root/VHDL/Sport/Basketball/CLK1s.vhd EN work/CLK1s 1511350894
+FL /root/VHDL/Sport/Basketball/CLKhalfsec.vhd 2017/11/19.23:35:08 P.20131013
+EN work/CLKhalfsec 1511350884 FL /root/VHDL/Sport/Basketball/CLKhalfsec.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CLKhalfsec/Behavioral 1511350885 \
+      FL /root/VHDL/Sport/Basketball/CLKhalfsec.vhd EN work/CLKhalfsec 1511350884
+FL /root/VHDL/Sport/Basketball/Counter.vhd 2017/11/17.05:12:10 P.20131013
+EN work/Counter 1511350886 FL /root/VHDL/Sport/Basketball/Counter.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Counter/Behavioral 1511350887 \
+      FL /root/VHDL/Sport/Basketball/Counter.vhd EN work/Counter 1511350886
+FL /root/VHDL/Sport/Basketball/Counts_Quarter.vhd 2017/11/17.03:39:30 P.20131013
+EN work/Counts_Quarter 1511350896 \
+      FL /root/VHDL/Sport/Basketball/Counts_Quarter.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Counts_Quarter/Behavioral 1511350897 \
+      FL /root/VHDL/Sport/Basketball/Counts_Quarter.vhd EN work/Counts_Quarter 1511350896
+FL /root/VHDL/Sport/Basketball/Debouce.vhd 2017/11/01.23:17:10 P.20131013
+EN work/Debouce 1511350912 FL /root/VHDL/Sport/Basketball/Debouce.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177
+AR work/Debouce/Behavioral 1511350913 \
+      FL /root/VHDL/Sport/Basketball/Debouce.vhd EN work/Debouce 1511350912
+FL /root/VHDL/Sport/Basketball/FSM.vhd 2017/11/10.10:20:26 P.20131013
+EN work/FSM 1511350898 FL /root/VHDL/Sport/Basketball/FSM.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/FSM/Behavioral 1511350899 \
+      FL /root/VHDL/Sport/Basketball/FSM.vhd EN work/FSM 1511350898
+FL /root/VHDL/Sport/Basketball/FSM_COM.vhd 2017/11/19.07:56:36 P.20131013
+EN work/FSM_COM 1511350890 FL /root/VHDL/Sport/Basketball/FSM_COM.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/FSM_COM/Behavioral 1511350891 \
+      FL /root/VHDL/Sport/Basketball/FSM_COM.vhd EN work/FSM_COM 1511350890
+FL /root/VHDL/Sport/Basketball/FSM_Push.vhd 2017/11/12.03:16:46 P.20131013
+EN work/FSM_Push 1511350888 FL /root/VHDL/Sport/Basketball/FSM_Push.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/FSM_Push/Behavioral 1511350889 \
+      FL /root/VHDL/Sport/Basketball/FSM_Push.vhd EN work/FSM_Push 1511350888
+FL /root/VHDL/Sport/Basketball/FSM_top.vhd 2017/11/20.01:44:28 P.20131013
+EN work/FSM_top 1511350918 FL /root/VHDL/Sport/Basketball/FSM_top.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/FSM_top/Behavioral 1511350919 \
+      FL /root/VHDL/Sport/Basketball/FSM_top.vhd EN work/FSM_top 1511350918
+FL /root/VHDL/Sport/Basketball/Overtime5min.vhd 2017/11/20.08:00:00 P.20131013
+EN work/Overtime5min 1511350906 FL /root/VHDL/Sport/Basketball/Overtime5min.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Overtime5min/Behavioral 1511350907 \
+      FL /root/VHDL/Sport/Basketball/Overtime5min.vhd EN work/Overtime5min 1511350906
+FL /root/VHDL/Sport/Basketball/ScanDigit_score.vhd 2017/11/19.23:43:28 P.20131013
+EN work/ScanDigit_score 1511350892 \
+      FL /root/VHDL/Sport/Basketball/ScanDigit_score.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ScanDigit_score/Behavioral 1511350893 \
+      FL /root/VHDL/Sport/Basketball/ScanDigit_score.vhd EN work/ScanDigit_score 1511350892
+FL /root/VHDL/Sport/Basketball/ScanDigit_time.vhd 2017/11/19.23:40:00 P.20131013
+EN work/ScanDigit_time 1511350910 \
+      FL /root/VHDL/Sport/Basketball/ScanDigit_time.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ScanDigit_time/Behavioral 1511350911 \
+      FL /root/VHDL/Sport/Basketball/ScanDigit_time.vhd EN work/ScanDigit_time 1511350910
+FL /root/VHDL/Sport/Basketball/ScoreTop.vhd 2017/11/22.05:22:12 P.20131013
+EN work/ScoreTop 1511350916 FL /root/VHDL/Sport/Basketball/ScoreTop.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ScoreTop/Structural 1511350917 \
+      FL /root/VHDL/Sport/Basketball/ScoreTop.vhd EN work/ScoreTop 1511350916 \
+      CP CLK1ms CP CLKhalfsec CP Counter CP FSM_Push CP FSM_COM CP ScanDigit_score
+FL /root/VHDL/Sport/Basketball/TimeTop.vhd 2017/11/20.00:09:50 P.20131013
+EN work/TimeTop 1511350914 FL /root/VHDL/Sport/Basketball/TimeTop.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/TimeTop/Structural 1511350915 \
+      FL /root/VHDL/Sport/Basketball/TimeTop.vhd EN work/TimeTop 1511350914 \
+      CP CLK1ms CP CLK1s CP Counts_Quarter CP FSM CP CD10min CP CD15min CP CD2min \
+      CP Overtime5min CP Buzzer CP ScanDigit_time
+FL /root/VHDL/Sport/Basketball/Top.vhd 2017/11/22.05:26:00 P.20131013
+EN work/Top 1511350922 FL /root/VHDL/Sport/Basketball/Top.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Top/Structural 1511350923 \
+      FL /root/VHDL/Sport/Basketball/Top.vhd EN work/Top 1511350922 CP CLK1ms \
+      CP Debouce CP TimeTop CP ScoreTop CP FSM_top CP BCD

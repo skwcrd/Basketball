@@ -142,7 +142,7 @@ Begin
 		CLK	=> CLK,
 		Rstb	=> Rstb,
 		i1s	=> w0_5s,
-		I		=> wChange,
+		I		=> Change,
 		iCOM	=> wCOM,
 		com	=> com
 	);

@@ -92,6 +92,7 @@ Architecture Structural of Top is
 	signal wPush1Score,wPush2Score,wPush3Score,wPush4Score : std_logic;
 	signal wLEDT1,wLEDT2 : std_logic_vector(3 downto 0);
 	signal wLED : std_logic_vector(4 downto 0);
+	signal wLED1,wLED2 : std_logic_vector(7 downto 0);
 	signal wData,wData1,wData2 : std_logic_vector(3 downto 0);
 	signal wCom1,wCom2 : std_logic_vector(3 downto 0);
 	signal wdp : std_logic;
@@ -173,6 +174,9 @@ Begin
 		com		=> wCom2
 	);
 	
+	wLED1 <= "000" & wLED;
+	wLED2 <= wLEDT1 & wLEDT2;
+	
 	u_FSM : FSM_top
 	Port Map(
 		CLK			=> CLK,
@@ -187,8 +191,8 @@ Begin
 		iComTime		=> wCom1,
 		iComScore	=> wCom2,
 		idp			=> wdp,
-		iLEDtime		=> "000" & wLED,
-		iLEDscore	=> wLEDT1 & wLEDT2,
+		iLEDtime		=> wLED1,
+		iLEDscore	=> wLED2,
 		oPush1Time	=> wPush1Time,
 		oPush2Time	=> wPush2Time,
 		oPush3Time	=> wPush3Time,

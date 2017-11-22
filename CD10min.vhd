@@ -38,17 +38,14 @@ Begin
 			if(I10='1') then
 				wS10 <= not wS10;
 				wFinish <= '0';
-			elsif(i1ms='1' and w10Digit1=0 and w10Digit2=0 and w10Digit3=0 and w10Digit4=0) then
+				rCnt <= '1';
+			elsif(i1s='1' and rCnt='0') then
+				wFinish <= '0';
+				rCnt <= '0';
+			elsif(i1ms='1' and w10Digit1=0 and w10Digit2=0 and w10Digit3=0 and w10Digit4=0 and rCnt='1') then
 				wS10 <= '0';
-				if(i1ms='1' and rCnt='0') then
-					wFinish <= '1';
-					rCnt <= '1';
-				elsif(i1s='1' and rCnt='1') then
-					wFinish <= '0';
-				else
-					wFinish <= wFinish;
-					rCnt <= rCnt;
-				end if;
+				wFinish <= '1';
+				rCnt <= '0';
 			else
 				wS10 <= wS10;
 				wFinish <= wFinish;
