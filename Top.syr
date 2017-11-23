@@ -4,14 +4,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 3.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 3.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.06 secs
  
 --> 
@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 100000
+Global Maximum Fanout              : 500
 Add Generic Clock Buffer(BUFG)     : 8
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -131,9 +131,9 @@ Entity <CLK1s> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/root/VHDL/Sport/Basketball/Counts_Quarter.vhd" in Library work.
 Entity <Counts_Quarter> compiled.
 Entity <Counts_Quarter> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/root/VHDL/Sport/Basketball/FSM.vhd" in Library work.
-Entity <FSM> compiled.
-Entity <FSM> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/root/VHDL/Sport/Basketball/FSM_Time.vhd" in Library work.
+Entity <FSM_Time> compiled.
+Entity <FSM_Time> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/root/VHDL/Sport/Basketball/CD10min.vhd" in Library work.
 Entity <CD10min> compiled.
 Entity <CD10min> (Architecture <Behavioral>) compiled.
@@ -194,7 +194,7 @@ Analyzing hierarchy for entity <CLK1s> in library <work> (architecture <Behavior
 
 Analyzing hierarchy for entity <Counts_Quarter> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <FSM> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <FSM_Time> in library <work> (architecture <Behavioral>).
 
 Analyzing hierarchy for entity <CD10min> in library <work> (architecture <Behavioral>).
 
@@ -240,8 +240,8 @@ Entity <CLK1s> analyzed. Unit <CLK1s> generated.
 Analyzing Entity <Counts_Quarter> in library <work> (Architecture <Behavioral>).
 Entity <Counts_Quarter> analyzed. Unit <Counts_Quarter> generated.
 
-Analyzing Entity <FSM> in library <work> (Architecture <Behavioral>).
-Entity <FSM> analyzed. Unit <FSM> generated.
+Analyzing Entity <FSM_Time> in library <work> (Architecture <Behavioral>).
+Entity <FSM_Time> analyzed. Unit <FSM_Time> generated.
 
 Analyzing Entity <CD10min> in library <work> (Architecture <Behavioral>).
 Entity <CD10min> analyzed. Unit <CD10min> generated.
@@ -383,8 +383,8 @@ Synthesizing Unit <Counts_Quarter>.
 Unit <Counts_Quarter> synthesized.
 
 
-Synthesizing Unit <FSM>.
-    Related source file is "/root/VHDL/Sport/Basketball/FSM.vhd".
+Synthesizing Unit <FSM_Time>.
+    Related source file is "/root/VHDL/Sport/Basketball/FSM_Time.vhd".
     Found finite state machine <FSM_1> for signal <curr_state>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
@@ -406,7 +406,7 @@ Synthesizing Unit <FSM>.
     Summary:
 	inferred   1 Finite State Machine(s).
 	inferred  16 D-type flip-flop(s).
-Unit <FSM> synthesized.
+Unit <FSM_Time> synthesized.
 
 
 Synthesizing Unit <CD10min>.
@@ -626,7 +626,7 @@ Macro Statistics
 =========================================================================
 
 Analyzing FSM <FSM_1> for best encoding.
-Optimizing FSM <u_TimeTop/u_FSM/curr_state/FSM> on signal <curr_state[1:2]> with sequential encoding.
+Optimizing FSM <u_TimeTop/u_FSMtime/curr_state/FSM> on signal <curr_state[1:2]> with sequential encoding.
 -------------------
  State | Encoding
 -------------------
@@ -682,8 +682,6 @@ Macro Statistics
 Optimizing unit <Top> ...
 
 Optimizing unit <Debouce> ...
-
-Optimizing unit <FSM> ...
 
 Optimizing unit <CD10min> ...
 
@@ -888,15 +886,15 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
   Total number of paths / destination ports: 45 / 21
 -------------------------------------------------------------------------
 Offset:              7.896ns (Levels of Logic = 2)
-  Source:            u_FSM/oData_3 (FF)
+  Source:            u_FSMtop/oData_3 (FF)
   Destination:       oBCD<6> (PAD)
   Source Clock:      CLK rising
 
-  Data Path: u_FSM/oData_3 to oBCD<6>
+  Data Path: u_FSMtop/oData_3 to oBCD<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               7   0.626   1.201  u_FSM/oData_3 (u_FSM/oData_3)
+     FD:C->Q               7   0.626   1.201  u_FSMtop/oData_3 (u_FSMtop/oData_3)
      LUT4:I0->O            1   0.479   0.681  u_BCD/Mrom_O41 (oBCD_4_OBUF)
      OBUF:I->O                 4.909          oBCD_4_OBUF (oBCD<4>)
     ----------------------------------------
@@ -906,13 +904,13 @@ Offset:              7.896ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 19.00 secs
-Total CPU time to Xst completion: 11.65 secs
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 14.43 secs
  
 --> 
 
 
-Total memory usage is 531688 kilobytes
+Total memory usage is 531620 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

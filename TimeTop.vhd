@@ -57,7 +57,7 @@ Architecture Structural of TimeTop is
 	);
 	End Component ScanDigit_time;
 	
-	Component FSM is
+	Component FSM_Time is
 	Port(
 		CLK,Rstb : in std_logic;
 		iState,iOver : in std_logic;
@@ -67,7 +67,7 @@ Architecture Structural of TimeTop is
 		i2Digit1,i2Digit2,i2Digit3,i2Digit4 : in std_logic_vector(3 downto 0);
 		oDigit1,oDigit2,oDigit3,oDigit4 : out std_logic_vector(3 downto 0)
 	);
-	End Component FSM;
+	End Component FSM_Time;
 	
 	Component CD10min is
 	Port(
@@ -167,7 +167,7 @@ Begin
 		oRe		=> wRe
 	);
 	
-	u_FSM : FSM
+	u_FSMtime : FSM_Time
 	Port Map(
 		CLK			=> CLK,
 		Rstb			=> Rstb,

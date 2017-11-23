@@ -5,9 +5,9 @@ Loading device for application Rf_Device from file '3s200.nph' in environment
    "Top" is an NCD, version 3.2, device xc3s200, package tq144, speed -5
 Opened constraints file Top.pcf.
 
-Wed Nov 22 05:42:14 2017
+Thu Nov 23 07:06:09 2017
 
-/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:6 -g CclkPin:PullUp -g M0Pin:PullUp -g M1Pin:PullUp -g M2Pin:PullUp -g ProgPin:PullUp -g DonePin:PullUp -g HswapenPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g DCIUpdateMode:AsRequired -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Match_cycle:Auto -g Security:None -g DonePipe:Yes -g DriveDone:No Top.ncd 
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:6 -g CclkPin:PullUp -g M0Pin:PullUp -g M1Pin:PullUp -g M2Pin:PullUp -g ProgPin:PullUp -g DonePin:PullUp -g HswapenPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g DCIUpdateMode:AsRequired -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Match_cycle:Auto -g Security:None -g DonePipe:No -g DriveDone:No Top.ncd 
 
 INFO:Bitgen:40 - Replacing "Auto" with "NoWait" for option "Match_cycle".  Most
    commonly, bitgen has determined and will use a specific value instead of the
@@ -72,7 +72,7 @@ Summary of Bitgen Options:
 +----------------------+----------------------+
 | DriveDone            | No**                 |
 +----------------------+----------------------+
-| DonePipe             | Yes                  |
+| DonePipe             | No**                 |
 +----------------------+----------------------+
 | Security             | None**               |
 +----------------------+----------------------+

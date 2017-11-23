@@ -177,7 +177,7 @@ Begin
 	wLED1 <= "000" & wLED;
 	wLED2 <= wLEDT1 & wLEDT2;
 	
-	u_FSM : FSM_top
+	u_FSMtop : FSM_top
 	Port Map(
 		CLK			=> CLK,
 		Rstb			=> Rstb,

@@ -41,13 +41,13 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/Debouce.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/FSM.vhd&quot; into library work</arg>
-</msg>
-
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/FSM_COM.vhd&quot; into library work</arg>
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/FSM_Push.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/FSM_Time.vhd&quot; into library work</arg>
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/FSM_top.vhd&quot; into library work</arg>

@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-Entity FSM is
+Entity FSM_Time is
 Port(
 	CLK,Rstb : in std_logic;
 	iState,iOver : in std_logic;
@@ -13,9 +13,9 @@ Port(
 	i2Digit1,i2Digit2,i2Digit3,i2Digit4 : in std_logic_vector(3 downto 0);
 	oDigit1,oDigit2,oDigit3,oDigit4 : out std_logic_vector(3 downto 0)
 );
-End FSM;
+End FSM_Time;
 
-Architecture Behavioral of FSM is
+Architecture Behavioral of FSM_Time is
 	type State_Type is (S0,S1,S2,S3);
 	signal curr_state,next_state : State_Type;
 	signal wDigit1,wDigit2,wDigit3,wDigit4 : std_logic_vector(3 downto 0);
