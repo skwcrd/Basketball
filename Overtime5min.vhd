@@ -35,7 +35,11 @@ Begin
 			wFinish <= '0';
 			rCnt <= '0';
 		elsif(rising_edge(CLK)) then
-			if(I5='1') then
+			if(I5='1' and w5Digit1=0 and w5Digit2=0 and w5Digit3=0 and w5Digit4=0) then
+				wS5 <= '0';
+				wFinish <= '0';
+				rCnt <= '0';
+			elsif(I5='1') then
 				wS5 <= not wS5;
 				wFinish <= '0';
 				rCnt <= '1';

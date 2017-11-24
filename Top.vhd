@@ -145,9 +145,9 @@ Begin
 	Port Map(
 		CLK		=> CLK,
 		Rstb		=> Rstb,
-		iPushS	=> wPush2Time,
+		iPushS	=> wPush1Time,
 		iPushO	=> wPush3Time,
-		iPush10	=> wPush1Time,
+		iPush10	=> wPush2Time,
 		iPush5	=> wPush4Time,
 		Sw15		=> Sw1,
 		Sw2		=> Sw2,

@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Reading design: Top.prj
@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 8
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -413,14 +413,14 @@ Synthesizing Unit <CD10min>.
     Related source file is "/root/VHDL/Sport/Basketball/CD10min.vhd".
     Found 1-bit register for signal <rCnt>.
     Found 4-bit down counter for signal <w10Digit1>.
-    Found 5-bit comparator greatequal for signal <w10Digit1$cmp_ge0000> created at line 70.
+    Found 5-bit comparator greatequal for signal <w10Digit1$cmp_ge0000> created at line 74.
     Found 4-bit down counter for signal <w10Digit2>.
     Found 4-bit down counter for signal <w10Digit3>.
     Found 4-bit down counter for signal <w10Digit4>.
     Found 1-bit register for signal <wFinish>.
     Found 1-bit register for signal <wS10>.
     Found 1-bit register for signal <wStart>.
-    Found 5-bit comparator less for signal <wStart$cmp_lt0000> created at line 70.
+    Found 5-bit comparator less for signal <wStart$cmp_lt0000> created at line 74.
     Summary:
 	inferred   4 Counter(s).
 	inferred   4 D-type flip-flop(s).
@@ -463,12 +463,12 @@ Synthesizing Unit <Overtime5min>.
     Related source file is "/root/VHDL/Sport/Basketball/Overtime5min.vhd".
     Found 1-bit register for signal <rCnt>.
     Found 4-bit down counter for signal <w5Digit2>.
-    Found 5-bit comparator greatequal for signal <w5Digit2$cmp_ge0000> created at line 73.
-    Found 5-bit comparator less for signal <w5Digit2$cmp_lt0000> created at line 75.
+    Found 5-bit comparator greatequal for signal <w5Digit2$cmp_ge0000> created at line 77.
+    Found 5-bit comparator less for signal <w5Digit2$cmp_lt0000> created at line 79.
     Found 4-bit register for signal <w5Digit3>.
-    Found 4-bit subtractor for signal <w5Digit3$addsub0000> created at line 93.
+    Found 4-bit subtractor for signal <w5Digit3$addsub0000> created at line 97.
     Found 4-bit register for signal <w5Digit4>.
-    Found 4-bit subtractor for signal <w5Digit4$addsub0000> created at line 104.
+    Found 4-bit subtractor for signal <w5Digit4$addsub0000> created at line 108.
     Found 1-bit register for signal <wFinish>.
     Found 1-bit register for signal <wS5>.
     Found 1-bit register for signal <wStart>.
@@ -525,20 +525,21 @@ Unit <CLKhalfsec> synthesized.
 Synthesizing Unit <Counter>.
     Related source file is "/root/VHDL/Sport/Basketball/Counter.vhd".
     Found 1-bit register for signal <rCnt>.
-    Found 5-bit comparator greatequal for signal <rCnt$cmp_ge0000> created at line 56.
-    Found 5-bit comparator greatequal for signal <rCnt$cmp_ge0001> created at line 64.
+    Found 5-bit comparator greatequal for signal <rCnt$cmp_ge0000> created at line 48.
     Found 4-bit register for signal <wDigit1>.
-    Found 4-bit adder for signal <wDigit1$addsub0000> created at line 41.
+    Found 4-bit adder for signal <wDigit1$addsub0000> created at line 39.
     Found 5-bit comparator greatequal for signal <wDigit1$cmp_ge0000> created at line 34.
-    Found 5-bit comparator greatequal for signal <wDigit1$cmp_ge0001> created at line 34.
     Found 4-bit register for signal <wDigit2>.
-    Found 4-bit addsub for signal <wDigit2$addsub0000>.
+    Found 5-bit comparator greatequal for signal <wDigit2$cmp_ge0000> created at line 46.
+    Found 5-bit comparator greatequal for signal <wDigit2$cmp_ge0001> created at line 57.
+    Found 5-bit comparator greatequal for signal <wDigit2$cmp_ge0002> created at line 68.
+    Found 4-bit addsub for signal <wDigit2$share0000>.
     Found 4-bit register for signal <wScore>.
-    Found 5-bit comparator greater for signal <wScore$cmp_gt0000> created at line 83.
+    Found 5-bit comparator greater for signal <wScore$cmp_gt0000> created at line 89.
     Summary:
 	inferred  13 D-type flip-flop(s).
 	inferred   2 Adder/Subtractor(s).
-	inferred   5 Comparator(s).
+	inferred   6 Comparator(s).
 Unit <Counter> synthesized.
 
 
@@ -613,9 +614,9 @@ Macro Statistics
  1-bit register                                        : 63
  4-bit register                                        : 26
  8-bit register                                        : 1
-# Comparators                                          : 15
+# Comparators                                          : 17
  3-bit comparator greater                              : 1
- 5-bit comparator greatequal                           : 10
+ 5-bit comparator greatequal                           : 12
  5-bit comparator greater                              : 2
  5-bit comparator less                                 : 2
 
@@ -667,9 +668,9 @@ Macro Statistics
  9-bit up counter                                      : 1
 # Registers                                            : 175
  Flip-Flops                                            : 175
-# Comparators                                          : 15
+# Comparators                                          : 17
  3-bit comparator greater                              : 1
- 5-bit comparator greatequal                           : 10
+ 5-bit comparator greatequal                           : 12
  5-bit comparator greater                              : 2
  5-bit comparator less                                 : 2
 
@@ -705,8 +706,7 @@ INFO:Xst:2261 - The FF/Latch <u_Buz/wBuz2> in Unit <TimeTop> is equivalent to th
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 16.
-FlipFlop u_TimeTop/u_CLK1s/r1s has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 17.
 
 Final Macro Processing ...
 
@@ -714,8 +714,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 302
- Flip-Flops                                            : 302
+# Registers                                            : 301
+ Flip-Flops                                            : 301
 
 =========================================================================
 
@@ -744,26 +744,25 @@ Design Statistics
 # IOs                              : 32
 
 Cell Usage :
-# BELS                             : 734
+# BELS                             : 747
 #      GND                         : 1
 #      INV                         : 16
 #      LUT1                        : 68
-#      LUT2                        : 95
-#      LUT2_D                      : 3
-#      LUT2_L                      : 3
-#      LUT3                        : 111
-#      LUT3_D                      : 16
-#      LUT3_L                      : 7
-#      LUT4                        : 207
-#      LUT4_D                      : 25
-#      LUT4_L                      : 20
+#      LUT2                        : 107
+#      LUT2_L                      : 4
+#      LUT3                        : 133
+#      LUT3_D                      : 7
+#      LUT3_L                      : 10
+#      LUT4                        : 205
+#      LUT4_D                      : 23
+#      LUT4_L                      : 5
 #      MUXCY                       : 68
-#      MUXF5                       : 19
+#      MUXF5                       : 25
 #      VCC                         : 1
 #      XORCY                       : 74
-# FlipFlops/Latches                : 302
+# FlipFlops/Latches                : 301
 #      FD                          : 28
-#      FDC                         : 73
+#      FDC                         : 72
 #      FDCE                        : 157
 #      FDE                         : 10
 #      FDPE                        : 15
@@ -780,9 +779,9 @@ Device utilization summary:
 
 Selected Device : 3s200tq144-5 
 
- Number of Slices:                      300  out of   1920    15%  
- Number of Slice Flip Flops:            302  out of   3840     7%  
- Number of 4 input LUTs:                571  out of   3840    14%  
+ Number of Slices:                      304  out of   1920    15%  
+ Number of Slice Flip Flops:            301  out of   3840     7%  
+ Number of 4 input LUTs:                578  out of   3840    15%  
  Number of IOs:                          32
  Number of bonded IOBs:                  32  out of     97    32%  
  Number of GCLKs:                         1  out of      8    12%  
@@ -808,7 +807,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 302   |
+CLK                                | BUFGP                  | 301   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -816,7 +815,7 @@ Asynchronous Control Signals Information:
 ------------------------------------------------------------------------------+----------------------------------+-------+
 Control Signal                                                                | Buffer(FF name)                  | Load  |
 ------------------------------------------------------------------------------+----------------------------------+-------+
-Rstb_inv(u_TimeTop/u_ScanDigit/Rstb_inv1_INV_0:O)                             | NONE(u_CLK1ms/r1ms)              | 185   |
+Rstb_inv(u_TimeTop/u_ScanDigit/Rstb_inv1_INV_0:O)                             | NONE(u_CLK1ms/r1ms)              | 184   |
 u_TimeTop/u_10min/w10Digit1_or0000(u_TimeTop/u_Counts/wF_or00001:O)           | NONE(u_TimeTop/u_10min/rCnt)     | 22    |
 u_TimeTop/u_15min/w15Digit1_not0002_inv(u_TimeTop/u_15min/w15Digit1_or00001:O)| NONE(u_TimeTop/u_15min/rCnt)     | 17    |
 u_TimeTop/u_2min/w2Digit2_not0002_inv(u_TimeTop/u_2min/w2Digit2_or00001:O)    | NONE(u_TimeTop/u_2min/w2Digit2_0)| 12    |
@@ -827,8 +826,8 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 6.305ns (Maximum Frequency: 158.603MHz)
-   Minimum input arrival time before clock: 4.823ns
+   Minimum period: 7.570ns (Maximum Frequency: 132.098MHz)
+   Minimum input arrival time before clock: 3.875ns
    Maximum output required time after clock: 7.896ns
    Maximum combinational path delay: No path found
 
@@ -838,48 +837,50 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 6.305ns (frequency: 158.603MHz)
-  Total number of paths / destination ports: 4651 / 492
+  Clock period: 7.570ns (frequency: 132.098MHz)
+  Total number of paths / destination ports: 4681 / 491
 -------------------------------------------------------------------------
-Delay:               6.305ns (Levels of Logic = 3)
-  Source:            u_TimeTop/u_CLK1s/r1s_1 (FF)
-  Destination:       u_TimeTop/u_15min/w15Digit1_0 (FF)
+Delay:               7.570ns (Levels of Logic = 6)
+  Source:            u_ScoreTop/u_FSMpush/oT1Push1 (FF)
+  Destination:       u_ScoreTop/u_Team1/wDigit2_3 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: u_TimeTop/u_CLK1s/r1s_1 to u_TimeTop/u_15min/w15Digit1_0
+  Data Path: u_ScoreTop/u_FSMpush/oT1Push1 to u_ScoreTop/u_Team1/wDigit2_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              1   0.626   0.976  u_TimeTop/u_CLK1s/r1s_1 (u_TimeTop/u_CLK1s/r1s_1)
-     LUT3:I0->O            1   0.479   0.976  u_TimeTop/u_15min/w15Digit1_or0001_SW0_SW0 (N176)
-     LUT4:I0->O           10   0.479   0.987  u_TimeTop/u_15min/w15Digit1_or0001 (u_TimeTop/u_15min/w15Digit1_or0001)
-     LUT4:I3->O            4   0.479   0.779  u_TimeTop/u_15min/w15Digit1_not00031 (u_TimeTop/u_15min/w15Digit1_not0003)
-     FDPE:CE                   0.524          u_TimeTop/u_15min/w15Digit1_0
+     FDR:C->Q             12   0.626   1.245  u_ScoreTop/u_FSMpush/oT1Push1 (u_ScoreTop/u_FSMpush/oT1Push1)
+     LUT2_L:I0->LO         1   0.479   0.123  u_ScoreTop/u_Team1/rCnt_mux00062_SW0 (N124)
+     LUT4:I3->O            3   0.479   0.794  u_ScoreTop/u_Team1/rCnt_mux00062 (u_ScoreTop/u_Team1/N10)
+     LUT4_D:I3->O          2   0.479   0.768  u_ScoreTop/u_Team1/wDigit2_mux00111 (u_ScoreTop/u_Team1/wDigit2_mux00111)
+     LUT4:I3->O            2   0.479   0.804  u_ScoreTop/u_Team1/Maddsub_wDigit2_share0000_cy<1>11 (u_ScoreTop/u_Team1/Maddsub_wDigit2_share0000_cy<1>)
+     LUT3_L:I2->LO         1   0.479   0.159  u_ScoreTop/u_Team1/wDigit2_mux0009<0>_SW0 (N154)
+     LUT3:I2->O            1   0.479   0.000  u_ScoreTop/u_Team1/wDigit2_mux0009<0> (u_ScoreTop/u_Team1/wDigit2_mux0009<0>)
+     FDCE:D                    0.176          u_ScoreTop/u_Team1/wDigit2_3
     ----------------------------------------
-    Total                      6.305ns (2.587ns logic, 3.718ns route)
-                                       (41.0% logic, 59.0% route)
+    Total                      7.570ns (3.676ns logic, 3.894ns route)
+                                       (48.6% logic, 51.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
   Total number of paths / destination ports: 44 / 44
 -------------------------------------------------------------------------
-Offset:              4.823ns (Levels of Logic = 3)
-  Source:            Sw2 (PAD)
-  Destination:       u_TimeTop/u_2min/w2Digit3_0 (FF)
+Offset:              3.875ns (Levels of Logic = 2)
+  Source:            Rstb (PAD)
+  Destination:       u_TimeTop/u_ScanDigit/rCnt500ms_0 (FF)
   Destination Clock: CLK rising
 
-  Data Path: Sw2 to u_TimeTop/u_2min/w2Digit3_0
+  Data Path: Rstb to u_TimeTop/u_ScanDigit/rCnt500ms_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   0.715   1.040  Sw2_IBUF (Sw2_IBUF)
-     LUT2:I0->O            5   0.479   0.806  u_TimeTop/u_2min/w2Digit4_not00021 (u_TimeTop/u_2min/w2Digit3_not000221)
-     LUT4:I3->O            4   0.479   0.779  u_TimeTop/u_2min/w2Digit3_not000222 (u_TimeTop/u_2min/w2Digit3_not0002)
-     FDCE:CE                   0.524          u_TimeTop/u_2min/w2Digit3_0
+     IBUF:I->O             7   0.715   1.201  Rstb_IBUF (Rstb_IBUF)
+     LUT2:I0->O            9   0.479   0.955  u_TimeTop/u_ScanDigit/rCnt500ms_and00011 (u_TimeTop/u_ScanDigit/rCnt500ms_and0001)
+     FDE:CE                    0.524          u_TimeTop/u_ScanDigit/rCnt500ms_0
     ----------------------------------------
-    Total                      4.823ns (2.197ns logic, 2.626ns route)
-                                       (45.6% logic, 54.4% route)
+    Total                      3.875ns (1.718ns logic, 2.156ns route)
+                                       (44.3% logic, 55.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
@@ -904,13 +905,13 @@ Offset:              7.896ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 16.00 secs
-Total CPU time to Xst completion: 14.43 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 10.45 secs
  
 --> 
 
 
-Total memory usage is 531620 kilobytes
+Total memory usage is 532304 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

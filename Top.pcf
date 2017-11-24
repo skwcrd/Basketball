@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Nov 23 07:05:50 2017
+// Written by: Map P.20131013 on Fri Nov 24 02:45:18 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -191,8 +191,8 @@ TIMEGRP CLK = BEL "u_CLK1ms/r1ms" BEL "u_ScoreTop/u_CLK0_5s/r0_5s" BEL
         "u_TimeTop/u_Counts/wSO" BEL "u_TimeTop/u_CLK1s/r1s" BEL
         "u_TimeTop/u_CLK1ms/r1ms" BEL "u_TimeTop/u_FSMtime/wDigit1_0" BEL
         "u_TimeTop/u_FSMtime/wDigit1_1" BEL "u_TimeTop/u_FSMtime/wDigit1_2"
-        BEL "u_TimeTop/u_FSMtime/wDigit1_3" BEL "u_TimeTop/u_CLK1s/r1s_1" BEL
-        "CLK_BUFGP/BUFG.GCLKMUX" BEL "CLK_BUFGP/BUFG";
+        BEL "u_TimeTop/u_FSMtime/wDigit1_3" BEL "CLK_BUFGP/BUFG.GCLKMUX" BEL
+        "CLK_BUFGP/BUFG";
 ts_clk = PERIOD TIMEGRP "CLK" 40 ns HIGH 50%;
 SCHEMATIC END;
 

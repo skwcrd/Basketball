@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-11-23T07:05:03</DateModified>
+  <DateModified>2017-11-24T02:27:24</DateModified>
   <ModuleName>Top</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/root/VHDL/Sport/Basketball/iseconfig/Top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/root/VHDL/Sport/Basketball</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/root/VHDL/Sport/Basketball/</ImplementationReportsDirectory>
   <DateInitialized>2017-11-23T07:05:02</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

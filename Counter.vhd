@@ -31,46 +31,52 @@ Begin
 			wDigit2 <= (others => '0');
 			rCnt <= '0';
 		elsif(rising_edge(CLK)) then
-			if(wScore="1111" and wDigit1>=9 and wDigit2>=9) then
+			if(wScore="1111" and wDigit1>=9) then
 				wDigit1 <= "1001";
-				wDigit2 <= "1001";
+			elsif(wDigit1>9) then
+				wDigit1 <= (others => '0');
+			elsif(rCnt='1') then
+				wDigit1 <= wDigit1 + 1;
+				rCnt <= '0';
 			else
-				if(wDigit1>9) then
-					wDigit1 <= (others => '0');
-				elsif(rCnt='1') then
-					wDigit1 <= wDigit1 + 1;
+				wDigit1 <= wDigit1;
+			end if;
+			
+			if(iP1='1') then
+				if(wScore="1111" and wDigit1>=9 and wDigit2>=8) then
+					wDigit2 <= "1001";
 					rCnt <= '0';
+				elsif(wDigit2>=9) then
+					wDigit2 <= wDigit2 - 9;
+					rCnt <= '1';
 				else
-					wDigit1 <= wDigit1;
+					wDigit2 <= wDigit2 + 1;
+					rCnt <= '0';
 				end if;
-				
-				if(iP1='1') then
-					if(wDigit2>=9) then
-						wDigit2 <= wDigit2 - 9;
-						rCnt <= '1';
-					else
-						wDigit2 <= wDigit2 + 1;
-						rCnt <= '0';
-					end if;
-				elsif(iP2='1') then
-					if(wDigit2>=8) then
-						wDigit2 <= wDigit2 - 8;
-						rCnt <= '1';
-					else
-						wDigit2 <= wDigit2 + 2;
-						rCnt <= '0';
-					end if;
-				elsif(iP3='1') then
-					if(wDigit2>=7) then
-						wDigit2 <= wDigit2 - 7;
-						rCnt <= '1';
-					else
-						wDigit2 <= wDigit2 + 3;
-						rCnt <= '0';
-					end if;
+			elsif(iP2='1') then
+				if(wScore="1111" and wDigit1>=9 and wDigit2>=7) then
+					wDigit2 <= "1001";
+					rCnt <= '0';
+				elsif(wDigit2>=8) then
+					wDigit2 <= wDigit2 - 8;
+					rCnt <= '1';
 				else
-					wDigit2 <= wDigit2;
+					wDigit2 <= wDigit2 + 2;
+					rCnt <= '0';
 				end if;
+			elsif(iP3='1') then
+				if(wScore="1111" and wDigit1>=9 and wDigit2>=6) then
+					wDigit2 <= "1001";
+					rCnt <= '0';
+				elsif(wDigit2>=7) then
+					wDigit2 <= wDigit2 - 7;
+					rCnt <= '1';
+				else
+					wDigit2 <= wDigit2 + 3;
+					rCnt <= '0';
+				end if;
+			else
+				wDigit2 <= wDigit2;
 			end if;
 		end if;
 	end Process;

@@ -8,67 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/BCD.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/Buzzer.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/CD10min.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/CD15min.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/CD2min.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/CLK1ms.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/CLK1s.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/CLKhalfsec.vhd&quot; into library work</arg>
-</msg>
-
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/Counter.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/Counts_Quarter.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/Debouce.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/FSM_COM.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/FSM_Push.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/FSM_Time.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/FSM_top.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/Overtime5min.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/ScanDigit_score.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/ScanDigit_time.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/ScoreTop.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/TimeTop.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/root/VHDL/Sport/Basketball/Top.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
