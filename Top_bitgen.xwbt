@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=/root/VHDL/Sport/Basketball/Top.ncd
-OUTFILE=/root/VHDL/Sport/Basketball/Top.bit
-FAMILY=Spartan3
-PART=xc3s200-5tq144
-WORKINGDIR=/root/VHDL/Sport/Basketball
-LICENSE=WebPack
-USER_INFO=210640308_0_0_717

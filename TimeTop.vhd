@@ -121,7 +121,6 @@ Architecture Structural of TimeTop is
 	Component Buzzer is
 	Port(
 		CLK,Rstb : in std_logic;
-		i1ms,i1s : in std_logic;
 		iS10,iF10,iS5,iF5 : in std_logic;
 		oBuz : out std_logic
 	);
@@ -261,8 +260,6 @@ Begin
 	Port Map(
 		CLK	=> CLK,
 		Rstb	=> Rstb,
-		i1ms	=> w1ms,
-		i1s	=> w1s,
 		iS10	=> wStart,
 		iF10	=> wFinish,
 		iS5	=> wOverS,

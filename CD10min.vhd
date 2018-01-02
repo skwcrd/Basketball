@@ -16,7 +16,7 @@ End CD10min;
 Architecture Behavioral of CD10min is
 	signal wS10,rCnt : std_logic := '0';
 	signal w10Digit1 : std_logic_vector(3 downto 0) := "0001";
-	signal w10Digit2,w10Digit3,w10Digit4 : std_logic_vector(3 downto 0);
+	signal w10Digit2,w10Digit3,w10Digit4 : std_logic_vector(3 downto 0) := "0000";
 	signal wStart,wFinish : std_logic := '0';
 Begin
 

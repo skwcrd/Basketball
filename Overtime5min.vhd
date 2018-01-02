@@ -16,7 +16,7 @@ End Overtime5min;
 Architecture Behavioral of Overtime5min is
 	signal wS5,rCnt : std_logic := '0';
 	signal w5Digit2 : std_logic_vector(3 downto 0) := "0101";
-	signal w5Digit1,w5Digit3,w5Digit4 : std_logic_vector(3 downto 0);
+	signal w5Digit1,w5Digit3,w5Digit4 : std_logic_vector(3 downto 0) := "0000";
 	signal wStart,wFinish : std_logic := '0';
 Begin
 
